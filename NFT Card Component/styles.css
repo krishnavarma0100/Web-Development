@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #0D1A2D;
+}
+
+.root-main-1{
+    overflow: auto;
+}
+
+.card{
+    height: 623px;
+    max-width: 360px;
+    width: 90%;
+    background-color: #15273F;
+    border-radius: 1.2rem;
+    margin: auto;
+    overflow: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card img{
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: 23px auto;
+    border-radius: 0.6rem;
+    position: relative;
+}
+
+#img-hover{
+    height: 300px;
+    width: 300px;
+    margin: 23px auto;
+    border-radius: 0.6rem;
+    background-color: #879FBE;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0;
+    transition: opacity ease 0.5s;
+}
+
+#img-hover:hover{
+    opacity: 0.50;
+    background-color: #1FF5FB;
+}
+
+#img-hover svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.card h2{
+    margin-left: 23px;
+    margin-right: 23px;
+    color: white;
+    font-size: 22px;
+}
+
+.card h2:hover{
+    color: #1FF5FB;
+}
+
+.card p{
+    margin-left: 23px;
+    margin-right: 20px;
+    color: #879FBE;
+    padding-top: 23px;
+    font-size: 18px;
+    line-height: 1.7rem;
+}
+
+.eth{
+    width: 145px;
+    display: inline-block;
+}
+
+.eth svg{
+    vertical-align: middle;
+}
+
+.eth span{
+    color: #00FFF8;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px #00FFF8;
+    vertical-align: middle;
+}
+
+.days-left{
+    display: inline-block;
+}
+
+.days-left svg{
+    vertical-align: middle;
+}
+
+.days-left span{
+    vertical-align: middle;
+}
+
+.line{
+    border: 1px solid #24364E;
+    margin-top: 23px;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.line+img{
+    height: 2rem;
+    width: 2rem;
+    border:1px solid white;
+    border-radius: 50%;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 12px;
+    margin-left: 23px
+}
+
+img+span{
+    vertical-align: middle;
+    font-size: 17px;
+    color: #879FBE;
+}
+
+span>span{
+    color: white;
+}
+
+span>span:hover{
+    color: #1FF5FB;
+}
