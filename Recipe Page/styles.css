@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Young Serif';
+    color: #84837F;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #F3E5D8;
+}
+
+.root-main-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 130px auto;
+}
+
+.card{
+    width: 778px;
+    background-color: white;
+    border-radius: 1.4rem;
+}
+
+.card img{
+    max-width: 690px;
+    width: 90%;
+    border-radius: 1.2rem;
+    display: block;
+    margin: 40px auto;
+}
+
+.content{
+    margin-inline: 40px;
+}
+
+.card h1{
+    font-size: 2.22rem;
+    color: black;
+}
+
+.card p{
+    margin-block: 30px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.prep-time{
+    min-height: 180px;
+    padding: 20px 30px;
+}
+
+.prep-time h3{
+    font-size: 1.2rem;
+    color: #6D2B47;
+    font-weight: bold;
+}
+
+.prep-time ul{
+    padding-left: 1.1rem;
+}
+
+.prep-time li{
+    padding-top: 1rem;
+    padding-left: 1.8rem;
+    font-size: 0.9rem;
+}
+
+.prep-time li span{
+    color: #5F5758;
+}
+
+.ingrediants h2{
+    font-size: 1.7rem;
+    color: #874D3E;
+}
+
+.ingrediants ul{
+    padding-left: 1.5rem;
+}
+
+.ingrediants li{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.h-line-1{
+    border: 1px ridge #dad7d7;
+    margin-block: 2rem;
+}
+
+.instructions h2{
+    font-size: 1.7rem;
+    color: #874D3E;
+}
+
+.instructions ol{
+    padding-left: 1.5rem;
+}
+
+.instructions li{
+    padding-left: 1.1rem;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+.instructions li span{
+    color: #5F5758;
+}
+
+.h-line-2{
+    margin-block: 1.7rem;
+    border: 1px ridge #dad7d7;
+}
+
+.nutrients h2{
+    font-size: 1.7rem;
+    color: #874D3E;
+}
+
+.nutrients p{
+    font-size: 0.9rem;
+    margin-block: 1.3rem;
+}
+
+table{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+tbody tr{
+    padding-block: 11.5rem;
+    font-size: 0.9rem;
+    height: 50px;
+}
+
+tbody tr td{
+    padding-left: 1.5rem;
+    border-bottom: 1.5px ridge #dad7d7;
+}
+
+tbody td+td{
+    color: #874D3E;
+}
+
+tbody tr:last-child td{
+    border: none;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 500px) {
+    .root-main-1{
+        margin: 0;
+    }
+
+    .card{
+        border-radius: 0;
+    }
+
+    .card img{
+        margin-top: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+}
