@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+    font-family: 'Figtree';
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #F5D04E;
+}
+
+.root-main-1{
+    height: 100vh;
+}
+
+.card{
+    max-width: 400px;
+    width: 90%;
+    height: 540px;
+    border-radius: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0.5rem 0.5rem 0.1rem black;
+    border: 0.15rem solid black;
+    background-color: white;
+}
+
+.card svg{
+    display: block;
+    margin: 23px auto;
+    max-width: 350px;
+    width: 90%;
+    min-height: 210px;
+    border-radius: 1.2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 90%;
+    min-height: 260px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.status{
+    width: 85px;
+    height: 30px;
+    background-color: #F5D04E;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+
+.status span{
+    display: block;
+    margin: 5px auto;
+    font-weight: bolder;
+    text-shadow: 0.5px 0.5px 1px black;
+}
+
+.date{
+    font-weight: 800;
+    color: #575757;
+    text-shadow: 0.5px 0.5px 1px #575757;
+}
+
+.title h2{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-shadow: 1px 0px 1.5px black;
+}
+
+.title h2:hover{
+    color: #EDCA64;
+}
+
+.content{
+    font-size: 1rem;
+    line-height: 23px;
+    color: #898989;
+    font-weight: 550;
+    text-shadow: 0.5px 0.5px 0px #898989;
+}
+
+.person img{
+    width: 35px;
+    vertical-align: middle;
+}
+
+.person span{
+    font-weight: bolder;
+    vertical-align: middle;
+    padding-left: 15px;
+    text-shadow: 0.5px 0px 1px black;
+}
