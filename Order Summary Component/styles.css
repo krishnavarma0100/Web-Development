@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #E0E8FF;
+}
+
+.root-main-1 > svg{
+    display: block;
+    margin-inline: auto;
+    transform-origin: 50% 50%;
+    transform: scaleX(1.06);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    max-width: 93vw;
+}
+
+.root-main-1 > .card{
+    /* 475 * 735 */
+    width: 47.5rem;
+    min-height: 73.5rem;
+    position: relative;
+    top: 50%;
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 2;
+    background-color: white;
+    margin-block: 10.5rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.card > svg{
+    display: block;
+    position: relative;
+    margin-inline: auto;
+    transform-origin: 50% 0%;
+    transform: scale(1.06);
+}
+
+.content{
+    padding: 5rem;
+    text-align: center;
+}
+
+.content > h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.content > p{
+    font-size: 1.7rem;
+    margin-block: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    color: #808497;
+}
+
+.plan{
+    padding-block: 3rem;
+    border-radius: 1.5rem;
+}
+
+.plan > svg{
+    vertical-align: middle;
+}
+
+.price{
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-inline: 1rem;
+}
+
+.price > h2{
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.price > p{
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 0.7rem;
+    color: #808497;
+}
+
+.plan > a{
+    vertical-align: middle;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.content > button{
+    margin-inline: auto;
+}
+
+.content button:first-of-type{
+    /* 375 * 50 */
+    width: 37.5rem;
+    height: 5rem;
+    margin-block: 3.5rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    background-color: #382AE1;
+    color: white;
+    box-shadow: 0px 1.5rem 2rem #392ae138;
+    cursor: pointer;
+    transition: background-color ease 0.5s;
+}
+
+.content button:first-of-type:hover{
+    background-color: #766CF1;
+}
+
+.content button:last-of-type{
+    background-color: unset;
+    border: 0;
+    font-size: 1.7rem;
+    color: #808497;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color ease 0.5s;
+}
+
+.content button:last-of-type:hover{
+    color: black;
+}
+
+/* media queries */
+@media screen and (max-width: 1130px) {
+    .root-main-1 > svg{
+        transform: scaleX(1.045);
+        max-width: 93vw;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .root-main-1 > svg{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html{
+        font-size: 56%;
+    }
+
+    .price{
+        width: 55%;
+    }
+
+    .card{
+        max-width: 90%;
+    }
+
+    .card > svg{
+        transform: translateX(-50px);
+    }
+
+    .content button:first-of-type{
+        width: 100%;
+    }
+
+}
