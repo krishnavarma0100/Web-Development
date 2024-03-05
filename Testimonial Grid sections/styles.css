@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #EDF2F8;
+}
+
+.root-main-1{
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(4,27rem);
+    gap: 3rem;
+
+    justify-content: center;
+    margin-block: 17rem;
+}
+
+.card{
+    /* 270 * 300 */
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: 0.1px 0.1px 2rem gray;
+}
+
+.card-1{
+    grid-column-start: span 2;
+    background-color: #733FC8;
+    position: relative;
+    color: white;
+}
+
+.card-1 > svg{
+    position: absolute;
+    top: 0;
+    right: 15%;
+    z-index: 0;
+}
+
+.card-1 > h2{
+    z-index: 2;
+    position: relative;
+}
+
+.card-2{
+    color: white;
+    background-color: #49556B;
+}
+
+.card-3{
+    grid-row-start: span 2;
+    background-color: #ffffff;
+}
+
+.card-4{
+    background-color: #ffffff;
+}
+
+.card-5{
+    color: white;
+    grid-column-start: span 2;
+    background-color: #18202D;
+}
+
+.user{
+    min-height: 5rem;
+}
+
+.user > img{
+    width: 3.1rem;
+    height: 3.1rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 0.5px solid gainsboro;
+}
+
+.details{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 1rem;
+}
+
+.details > h3{
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.details > p{
+    font-size: 1.2rem;
+    color: #B6B9BC;
+}
+
+.card > h2{
+    font-size: 2.13rem;
+    line-height: 2.7rem;
+}
+
+.card > p{
+    font-size: 1.38rem;
+    line-height: 1.9rem;
+    margin-top: 1.5rem;
+    color: #B6B9BC;
+    font-weight: 700;
+}
+
+/* media queriez */
+/* 1200px - 1080px */
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+/* 1079px - 800px */
+@media (max-width: 1079px){
+    .root-main-1{
+        grid-template-columns: repeat(3,27rem);
+    }
+    .card-2{
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+
+/* 800px - 650px */
+@media (max-width: 800px){
+    html{
+        font-size: 45%;
+    }
+}
+
+/* 650 - 450px */
+@media (max-width: 650px){
+    .root-main-1{
+        grid-template-columns: repeat(2,27rem);
+    }
+}
+
+/* 449px -  */
+@media (max-width: 449px){
+    html{
+        font-size: 58%;
+    }
+
+    .root-main-1{
+        grid-template-columns: none;
+        grid-template-rows: repeat(8,26rem);
+        gap: 0;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .card{
+        margin-bottom: 2rem;
+    }
+
+    .card-1{
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .card-2{
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    .card-3{
+        grid-row-start: 7;
+        grid-row-end: 9;
+    }
+
+    .card-4{
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .card-5{
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }
+}
+
+@media (max-width: 346px){
+    html{
+        font-size: 49%;
+    }
+}
+
+@media (max-width: 296px){
+    html{
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 246px){
+    html{
+        font-size: 32%;
+    }
+}
