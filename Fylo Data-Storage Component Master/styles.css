@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Raleway", sans-serif;
+    background-image: url(/images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 0 55vh;
+    background-size: cover;
+    background-color: #0C122C;
+}
+
+.root-main-1{
+    overflow: hidden;
+}
+
+.card{
+    height: 100vh;
+    margin-inline: auto;
+    width: 97.8rem;
+    position: relative;
+    top: 42vh;
+}
+
+.card-1{
+    /* 375 * 210 */
+    width: 37.5rem;
+    /* width: 90%; */
+    min-height: 21rem;
+    background-color: #1E2C69;
+    display: inline-block;
+    border-radius: 0.9rem;
+    border-top-right-radius: 11rem;
+    overflow: auto;
+}
+
+.card-1 > svg{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    transform: scale(1.05);
+}
+
+.pics{
+    margin-top: 3.5rem;
+}
+
+.pic{
+    width: 5rem;
+    height: 5rem;
+    display: inline-block;
+    background-color: #080D1C;
+    vertical-align: middle;
+    border-radius: 0.8rem;
+    position: relative;
+}
+
+.pic > svg{
+    height: 100%;
+    display: block;
+    margin-inline: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    bottom: 25%;
+}
+
+.pics > .pic:nth-child(2),.pics > .pic:nth-child(3){
+    margin-left: 1.5rem;
+}
+
+.pic-1{
+    margin-left: 4rem;
+}
+
+.card-2{
+    /* 575 * 165 */
+    width: 57rem;
+    /* width: 90%; */
+    min-height: 16.5rem;
+    background-color: #1E2C69;
+    margin-left: 3rem;
+    display: inline-block;
+    border-radius: 0.9rem;
+    overflow: auto;
+    color: white;
+    padding-inline: 4.5rem;
+    padding-top: 4.5rem;
+}
+
+.card-2 > p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #9DA8E0;
+}
+
+.card-2 p>span{
+    color: #C6CFFF;
+    font-weight: 500;
+}
+
+#range1 {
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 0.3rem solid #151E48;
+}
+
+#range1::-webkit-slider-runnable-track {
+    height: 15px;
+    background: #151E48;
+    border-radius: 16px;
+}
+
+#range1::-moz-range-track {
+    height: 15px;
+    background: #ccc;
+    border-radius: 16px;
+}
+
+#range1::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none; 
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #f50;
+    box-shadow: -407px 0 0 400px #FB4D92;
+}
+
+#range1::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #f50;
+    box-shadow: -407px 0 0 400px #FB4D92;
+}
+
+.range > p{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    position: relative;
+    font-weight: 400;
+}
+
+.range p>span:nth-child(2){
+    position: absolute;
+    right: 0;
+}
+
+.exact-volume{
+    /* 190 * 75 */
+    width: 19rem;
+    height: 7.5rem;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    margin-right: 4.5rem;
+    top: 0.9%;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0;
+    padding-top: 1.5rem;
+    padding-left: 2.5rem;
+}
+
+.exact-volume::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 99%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: white;
+    clip-path: polygon(100% 100%, 0 0, 100% 0);
+}
+
+.exact-volume p> span:first-child{
+    font-size: 4rem;
+    vertical-align: middle;
+    font-weight: 700;
+}
+
+.exact-volume p>span:nth-child(2){
+    margin-left: 0.6rem;
+    font-size: 1.3rem;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #9C9DA4;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+@media (max-width: 1030px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 905px){
+    html{
+        font-size: 45%;
+    }
+}
+
+@media (max-width: 745px){
+    html{
+        font-size: 42%;
+    }
+}
+
+
+@media (max-width: 675px){
+    html{
+        font-size: 57%;
+    }
+
+    body{
+        background-size: cover;
+        background-position: -95rem 0;
+    }
+
+    .root-main-1{
+        height: 100vh;
+        overflow: auto;
+    }
+
+    .card{
+        width: 90%;
+        margin-inline: auto;
+        top: 24vh;
+        height: 44rem;
+        position: relative;
+    }
+    
+
+    .card-1{
+        display: block;
+        margin-inline: auto;
+        width: 100%;
+    }
+
+    .card-2{
+        display: block;
+        margin-inline: auto;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .exact-volume{
+        right: 11vw;
+        top: 37rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .exact-volume::after{
+        display: none;
+    }
+}
+
+@media (max-width: 352px){
+    html{
+        font-size: 48%;
+    }
+}
+
+@media (max-width: 296px){
+    html{
+        font-size: 40%;
+    }
+
+    .card{
+        height: 50rem;
+    }
+}
+
+@media (max-width: 296px){
+    .exact-volume{
+        top: 40rem;
+    }
+}
