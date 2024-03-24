@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background-color: rgb(224, 244, 224);
+}
+
+.root-main-1{
+    padding-inline: 5%;
+}
+
+.root-main-1 > h1{
+    color: rgb(0, 255, 0);
+    text-align: center;
+    font-size: 5rem;
+    margin-block: 3rem;
+}
+
+.root-main-1 h1>span{
+    color: rgb(128, 42, 42);
+}
+
+.card{
+    max-width: 60rem;
+    background-color: white;
+    margin-inline: auto;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+.card > h2{
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+.card h2 > img{
+    width: 5rem;
+    height: 5rem;
+    vertical-align: middle;
+}
+
+.card > p:first-of-type{
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.progress-bar{
+    max-width: 100%;
+    background-color: rgb(224, 244, 224);
+    min-height: 2.5rem;
+    border-radius: 2rem;
+    display: flex;
+}
+
+.progress-bar .progress{
+    width: 0;
+    background-color: green;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    transition: width ease 0.5s;
+}
+
+.progress span{
+    margin-left: 1.5rem;
+    min-width: max-content;
+}
+
+.error-line{
+    color: red;
+    font-size: 1.2rem;
+    display: none;
+    position: absolute;
+    margin-top: 0.6rem;
+}
+
+
+.line{
+    max-width: 100%;
+    background-color: white;
+    box-shadow: 0.5px 0.5px 0.5rem 1px gray;
+    margin-top: 3.5rem;
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.check{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    border: 0.1rem solid black;
+}
+
+.line > input{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    padding-left: 2rem;
+    align-self: stretch;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.line > input::placeholder{
+    color: rgb(158, 155, 155);
+}
+
+.line + p{
+    text-align: center;
+    margin-block: 4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.line +p+p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.line +p+p > span{
+    color: red;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.completed{
+    background-image: url(/assets/images/right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(51, 231, 51);
+}
+
+.line .task-completed{
+    
+    color: green;
+    text-decoration: line-through;
+}
+
+
+/* media queries */
+@media (max-width: 750px){
+    html{
+        font-size: 57%;
+    }
+
+    .root-main-1 > h1{
+        margin-top: 7rem;
+    }
+}
+
+@media (max-width: 600px){
+    html{
+        font-size: 51%;
+    }
+}
